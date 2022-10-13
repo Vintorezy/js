@@ -1,21 +1,20 @@
-let value = +prompt('Введите числовое значение:');
+const example = [1, 2, 3, 4, 5, 6, 7];
+console.log('Количество элементов в массиве: '+ example.length);
 
-if (isNaN(value) || value === 0 || typeof (value) !== 'number') {
-    console.log('Упс, кажется вы ошиблись');
-} else if (value % 2 === 0) {
-    console.log('Введённое число - чётное.');
-} else if (value % 1 === 0) {
-    console.log('Введённое число - нечётное');
+for (let i=0; i < example.length; i++) {
+     console.log(example[i]);
 }
 
-let x;
+let arr = [1, 2, 3, 4, 5, 6, 7];
+console.log('Количество элементов в массиве: '+ arr.length);
 
-if (typeof (x) === 'number') {
-    console.log('X - число');
-} else if (typeof (x) === 'string') {
-    console.log('X - строка');
-} else if (typeof (x) === 'boolean') {
-    console.log('Х - логический тип');
-} else {
-    console.log('Тип Х не определён');
-}
+arr.forEach(function(item, index, array) {
+  console.log(item);
+});
+
+let arr1 = [1, 2, 3, 4, 5, 6, 7];
+console.log('Количество элементов в массиве: '+ arr1.length);
+
+arr1.map(function(item, index, array) {
+  console.log(item);
+});
